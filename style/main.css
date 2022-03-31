@@ -1,0 +1,168 @@
+:root {
+    --red: #E50914;
+    --black: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;  /*box-sizing: border-box */
+}
+
+body {
+    background-color: var(--black);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/* HEADER */
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: var(--red);
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAAAAA;
+    margin-right: 10px;
+}
+header nav a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 10px;
+}
+
+/* FILME PRINCIPAL */
+
+.filme-principal .container {
+    padding: 3%;
+}
+
+.filme-principal {
+   font-size: 16px;
+   background: linear-gradient(rgba(0,0,0,.30), rgba(0,0,0,.30)100%), url("../img/shangchi.jpg");
+   height: 400px;
+   background-size: cover;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+    margin-top: 2%;
+    max-width: 400px;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.filme-principal .titulo {
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0,0,0,0.7);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 5%;
+    font-size: 12px;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.botao i {
+    margin-right: 5px;
+}
+
+
+.botao:hover {
+    background-color: rgba(255,255,255,0.7);
+    color:var(--black);
+}
+
+/* CAROUSEL */
+
+.carousel-container {
+    height: 80vh;
+    width: 100%;
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.carousel-container .carousel {
+    height: 400px;
+    width: 90%;
+    position: relative;
+}
+
+.carousel .switch-left, 
+.carousel .switch-rigth {
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    width: 45px;
+    line-height: 400px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    font-family: sans-serif;
+    top: 0;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.carousel .switch-left {
+    position: absolute;
+    left: -50px;
+}
+.carousel .switch-rigth {
+    position: absolute;
+    right: -50px;
+}
+
+.carousel-box {
+    height: 400px;
+    width: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px !important;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-box img {
+    min-width: 200px;
+    max-width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.7);
+    margin: 5px 10px;
+    cursor: pointer;
+    transition: .5s ease;
+    z-index: 2;
+}
+
+.carousel-box img:hover {
+    transform: scale(1.4);
+    z-index: 5;
+}

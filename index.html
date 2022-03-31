@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Netflix_icon.svg/1200px-Netflix_icon.svg.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETOFLIX</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETOFLIX</h2>
+            <nav>
+                <a href="">Início</a>
+                <a href="">Séries</a>
+                <a href="">Filmes</a>
+                <a href="">Documentários</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+           <div class="container">
+                <h3 class="titulo"> SHANG-CHI E A LENDA DOS DEZ ANÉIS</h3>
+                <p class="descricao">Shang-Chi precisa confrontar o passado que pensou ter deixado para trás. Ao mesmo tempo, ele é envolvido em uma teia de mistérios da organização conhecida como Dez Anéis.</p>
+                <div class="botoes">
+                    <button class="botao" role="button"><i class="fas fa-play-circle"></i> ASSISTIR AGORA</button>
+                    <button class="botao" role="button"><i class="fas fa-plus-circle"></i>  ADICIONAR À LISTA</button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-box">
+                </div>
+                <a class="switch-left slider-button" onclick="sliderScrollLeft()">&lt</a>    
+                <a class="switch-rigth slider-button" onclick="sliderScrollRigth()">&gt</a>    
+            </div>
+        </div>
+    </main>
+<script src="https://kit.fontawesome.com/bf22d4dde5.js" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.js"></script>
+<script src="./config/config.js"></script>  
+<script src="./js/index.js"></script>  
+</body>
+</html>
